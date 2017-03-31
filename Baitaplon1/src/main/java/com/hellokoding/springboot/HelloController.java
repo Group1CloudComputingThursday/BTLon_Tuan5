@@ -13,8 +13,7 @@ public class HelloController {
         return "thymeleaf/hello";
     }
     @RequestMapping("/new")
-    public String conference(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
-        model.addAttribute("name", name);
+    public String conference() {
         return "jsp/conference";
     }
     
